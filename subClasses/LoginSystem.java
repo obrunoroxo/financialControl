@@ -6,7 +6,8 @@ import financialControl.subComponent.ClearTerminal;
 
 public class LoginSystem {
     public void loginSystem() {
-        ClearTerminal Clear = new ClearTerminal();
+
+        ClearTerminal clear = new ClearTerminal();
 
         Scanner reader = new Scanner(System.in);
 
@@ -14,14 +15,14 @@ public class LoginSystem {
 
         String login = reader.nextLine();
 
-        Clear.clearTerminal();
+        clear.clearTerminal();
 
         System.out.println("Type your password:");
 
         String password = reader.nextLine();
 
-        Clear.clearTerminal();
+        clear.clearTerminal();
 
-        System.out.println("You taped: " + login + " " + password);
+        System.out.println("You taped: " + login + " " + password + "\n");
     }
 }
